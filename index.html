@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn C++ Programming</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Learn C++ Programming</h1>
+        <p>Become a pro programmer between beginner and IOI level!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#welcome-section">Home</a></li>
+            <li><a href="#lessons-section">Lessons</a></li>
+            <li><a href="#compiler-section">Compiler</a></li>
+            <li><a href="#tasks-section">Tasks</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Welcome Section -->
+        <section id="welcome-section">
+            <h2>Welcome to the C++ Learning Platform</h2>
+            <p>Select your current programming level:</p>
+            <div class="level-buttons">
+                <button onclick="setLevel('beginner')">Beginner</button>
+                <button onclick="setLevel('intermediate')">Intermediate</button>
+                <button onclick="setLevel('advanced')">Advanced</button>
+            </div>
+        </section>
+
+        <!-- Lessons Section -->
+        <section id="lessons-section" style="display: none;">
+            <h2>Lessons</h2>
+            <p>Here are some lessons tailored to your level:</p>
+            <ul id="lessons-list"></ul>
+        </section>
+
+        <!-- Compiler Section -->
+        <section id="compiler-section" style="display: none;">
+            <h2>Online Compiler</h2>
+            <textarea id="code-input" placeholder="Write your C++ code here..."></textarea>
+            <button onclick="runCode()">Run Code</button>
+            <pre id="output"></pre>
+        </section>
+
+        <!-- Tasks Section -->
+        <section id="tasks-section" style="display: none;">
+            <h2>Practice Tasks</h2>
+            <p>Solve tasks based on your level:</p>
+            <ul id="tasks-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Learn C++ Programming. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
